@@ -1,58 +1,34 @@
 pragma solidity >=0.5.0 <0.6.0;
 
-import "./zombiefeeding.sol";
+import "./zombiehelper.sol";
 
-contract ZombieHelper is ZombieFeeding {
-    uint256 levelUpFee = 0.001 ether;
+contract ZombieAttack is ZombieHelper {
+    uint256 randNonce = 0;
+    uint256 attackVictoryProbability = 70;
 
-    modifier aboveLevel(uint256 _level, uint256 _zombieId) {
-        require(zombies[_zombieId].level >= _level);
-        _;
+    function randMod(uint256 _modulus) internal returns (uint256) {
+        randNonce = randNonce.add(1);
+        return
+            uint256(keccak256(abi.encodePacked(now, msg.sender, randNonce))) %
+            _modulus;
     }
 
-    function withdraw() external onlyOwner {
-        address _owner = owner();
-        _owner.transfer(address(this).balance);
-    }
-
-    function setLevelUpFee(uint256 _fee) external onlyOwner {
-        levelUpFee = _fee;
-    }
-
-    function levelUp(uint256 _zombieId) external payable {
-        require(msg.value == levelUpFee);
-        zombies[_zombieId].level++;
-    }
-
-    function changeName(uint256 _zombieId, string calldata _newName)
+    function attack(uint256 _zombieId, uint256 _targetId)
         external
-        aboveLevel(2, _zombieId)
-        ownerOf(_zombieId)
+        onlyOwnerOf(_zombieId)
     {
-        zombies[_zombieId].name = _newName;
-    }
-
-    function changeDna(uint256 _zombieId, uint256 _newDna)
-        external
-        aboveLevel(20, _zombieId)
-        ownerOf(_zombieId)
-    {
-        zombies[_zombieId].dna = _newDna;
-    }
-
-    function getZombiesByOwner(address _owner)
-        external
-        view
-        returns (uint256[] memory)
-    {
-        uint256[] memory result = new uint256[](ownerZombieCount[_owner]);
-        uint256 counter = 0;
-        for (uint256 i = 0; i < zombies.length; i++) {
-            if (zombieToOwner[i] == _owner) {
-                result[counter] = i;
-                counter++;
-            }
+        Zombie storage myZombie = zombies[_zombieId];
+        Zombie storage enemyZombie = zombies[_targetId];
+        uint256 rand = randMod(100);
+        if (rand <= attackVictoryProbability) {
+            myZombie.winCount = myZombie.winCount.add(1);
+            myZombie.level = myZombie.level.add(1);
+            enemyZombie.lossCount = enemyZombie.lossCount.add(1);
+            feedAndMultiply(_zombieId, enemyZombie.dna, "zombie");
+        } else {
+            myZombie.lossCount = myZombie.lossCount.add(1);
+            enemyZombie.winCount = enemyZombie.winCount.add(1);
+            _triggerCooldown(myZombie);
         }
-        return result;
     }
 }
