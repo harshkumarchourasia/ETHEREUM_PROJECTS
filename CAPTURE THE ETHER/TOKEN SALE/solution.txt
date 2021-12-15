@@ -1,0 +1,2 @@
+require(msg.value == numTokens * PRICE_PER_TOKEN);
+make numTokens * PRICE_PER_TOKEN overflow and msg.value=(numTokens * PRICE_PER_TOKEN)%2**256
