@@ -1,0 +1,2 @@
+The given function is not the constructor. Different names. 
+So call  AssumeOwmershipChallenge() then authenticate()

@@ -1,0 +1,3 @@
+Make a random guess. I made a guess of 0.
+Keep calling the settle function from another smart contract. 
+There are only 10 possiblities. So it should take finite time. 
