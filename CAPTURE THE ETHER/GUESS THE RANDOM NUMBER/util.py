@@ -12,5 +12,5 @@ def are_we_connected():
 contract_address = "0xeF4a2c8e84A77169076a4d80eaDdd1672958f8d4"
 print("connected:", are_we_connected())
 print(web3_connection.eth.get_block(11611974))
-# parentHAsh = web3_connection.eth.get_block(11611974).parentHash
-# print(now, parentHAsh)
+# get the block.timestamp and block.parentHash form here.
+#use solidity to calculate answer

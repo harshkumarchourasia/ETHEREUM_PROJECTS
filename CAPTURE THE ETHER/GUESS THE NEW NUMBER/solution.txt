@@ -1,0 +1,3 @@
+Trick:
+To get the block info we create a new contract and call GuessTheNewNumberChallenge from there so their block information are same(they are mined together so they are on the same block).
+then call the guess function to take the ether back !!

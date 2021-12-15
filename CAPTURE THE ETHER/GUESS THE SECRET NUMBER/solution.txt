@@ -1,1 +1,2 @@
-170
+number is uint8. So anwer lies in [0,255].
+170 using brute-force.
