@@ -1,0 +1,1 @@
+blockhash becomes 0 after 256 blocks. predict 0 and after 256 blocks settle with 0.
