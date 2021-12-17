@@ -5,3 +5,6 @@ Solution and hints to the problems of capturetheether.com. This projects teaches
 
 CRYPTO-ZOMBIES <br />
 Solution to "Solidity Path: Beginner to Intermediate Smart Contracts" of "cryptozombies.io". Learnt about smart contract by building zombies game.
+
+ETHERNAUT<br />
+Hacking smart contracts to learn more about security vulnerabilities in solidity.
