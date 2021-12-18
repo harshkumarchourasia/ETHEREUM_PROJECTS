@@ -1,0 +1,3 @@
+let pwd
+web3.eth.getStorageAt(contract.address,1, function(err,res){pwd=res})
+pwd
