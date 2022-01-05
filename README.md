@@ -8,3 +8,6 @@ Solution to "Solidity Path: Beginner to Intermediate Smart Contracts" of "crypto
 
 ETHERNAUT<br />
 Hacking smart contracts to learn more about security vulnerabilities in solidity.
+
+ORACLE-EXAMPLE
+Code to https://medium.com/@harshkumarchourasia/how-to-create-an-oracle-in-with-ethereum-smart-contract-d5e7e26668c2
