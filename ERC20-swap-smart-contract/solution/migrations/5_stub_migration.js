@@ -1,4 +1,4 @@
-const Migrations = artifacts.require("PlatinumToken");
+const Migrations = artifacts.require("Swapper");
 
 module.exports = function (deployer) {
     deployer.deploy(
