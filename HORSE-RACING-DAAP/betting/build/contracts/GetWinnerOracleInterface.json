@@ -1,0 +1,245 @@
+{
+  "contractName": "GetWinnerOracleInterface",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getWinner",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getWinner\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/getWinnerOracleInterface.sol\":\"GetWinnerOracleInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/getWinnerOracleInterface.sol\":{\"keccak256\":\"0x7efd1e785fc65e1fcba49641eb4f813c9b75777f3b5fc66d53fde7785b6e1d32\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4c314dee0263dd613047712582e95f15475bb38e71c7749b834580f5c84cd58c\",\"dweb:/ipfs/QmQUvTq9uDCPgqe7L1eFqyhu1vjVzJfPmjuW2qEoV5z7vS\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\ninterface GetWinnerOracleInterface{\n    function getWinner() external returns(uint);\n}",
+  "sourcePath": "/home/harsh/Desktop/HORSE-RACING/betting/contracts/getWinnerOracleInterface.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/getWinnerOracleInterface.sol",
+    "exportedSymbols": {
+      "GetWinnerOracleInterface": [
+        446
+      ]
+    },
+    "id": 447,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 440,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "GetWinnerOracleInterface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 446,
+        "linearizedBaseContracts": [
+          446
+        ],
+        "name": "GetWinnerOracleInterface",
+        "nameLocation": "66:24:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8e7ea5b2",
+            "id": 445,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getWinner",
+            "nameLocation": "105:9:3",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 441,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "114:2:3"
+            },
+            "returnParameters": {
+              "id": 444,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 443,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 445,
+                  "src": "134:4:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 442,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "134:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "133:6:3"
+            },
+            "scope": 446,
+            "src": "96:44:3",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 447,
+        "src": "56:86:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:110:3"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/getWinnerOracleInterface.sol",
+    "exportedSymbols": {
+      "GetWinnerOracleInterface": [
+        446
+      ]
+    },
+    "id": 447,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 440,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "GetWinnerOracleInterface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 446,
+        "linearizedBaseContracts": [
+          446
+        ],
+        "name": "GetWinnerOracleInterface",
+        "nameLocation": "66:24:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8e7ea5b2",
+            "id": 445,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getWinner",
+            "nameLocation": "105:9:3",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 441,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "114:2:3"
+            },
+            "returnParameters": {
+              "id": 444,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 443,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 445,
+                  "src": "134:4:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 442,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "134:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "133:6:3"
+            },
+            "scope": 446,
+            "src": "96:44:3",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 447,
+        "src": "56:86:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:110:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.10+commit.fc410830.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-12-19T23:24:17.688Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
