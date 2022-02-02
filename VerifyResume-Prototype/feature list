@@ -1,0 +1,86 @@
+Company name ?
+1.candidate 
+ - signup using google
+ --save info like full name,email,imageURL,current date, current time
+ --- fill info like date of birth, age(derived), gender, nationality
+ ---- approve the profile and save data
+ - in settings section there should be option to update/remove profile pic, add/delete upto 3 government id
+ - add button to add wallet related to an account,  check they are unique
+ - candidate can approve certain company to view their proflile.
+ - e-mail update after receiving new certificate
+ - section to see all the certificates (company name, network name, contract address, token id, ipfs link) 
+2. master login (for company internal purpose only)
+ - can reset passwork(sha3) later
+ - see all the companies and their status(approved or not)
+ - can approve company if not approved
+ -- after approving genrate master email for company and password
+3. company
+ - master e-mail id features
+ -- can change password
+ -- add other e-mail address, name, password, certificate issuing rights
+ --can view all registered e-mail id across the company
+ --can deploy new contract with sample image
+ - HR email address
+ --SignIn using existing email and password + request for password recovery from HR
+ --Add wallets(check for uniqueness), view all wallets 
+ --can view all the certificates issued by this e-mail address
+ --can issue certificates
+ ---upload image
+ ----pick an existing contract, fill details
+ -----confirm - upload image - mint new token
+ 
+4. list of companies and company id in company website.
+5. What out company does + about team + contact
+
+TECH STACK
+-frontend -> vuejs
+-backend -> django
+-redis
+-mysql - sqlalchemy?
+-truffle
+
+multichain
+-polygon
+-ethereum
+-avalanche
+-testnets
+wallet
+-metamask
+-wallet connect
+web3 connect?
+
+db design
+   CANDIDATE
+   | candidate id | full name | email | dob(DATE) | age(>0) | gender(male/female/others) | nationality | image |
+
+   ACCESS RIGHT
+   | CANDIDATE ID | ACCESS RIGHT 
+
+   WALLET
+   | address | ID(candidate id / hr id) |
+
+   CANDIDATE META DATA
+   | candidate id | ID Name | Id number | Picture |
+
+   Contracts
+   | master id | network name | contract address |
+
+   SOME_CONTRACT
+   | token id | key1 | key2 ... | key n |
+
+   COMPANY 
+   | NAME | STATUS(WAITING/APPROVED/REJECTED) | Contract mail | Contact number | Point of contact name | company code | Master id 
+
+   HR LIST
+   company name | hr name | hr email | certificates issued | Issuing Right(Y/N) |
+   
+   HR WORK 
+   | ID | Company ID | chain name | contract address | token ID | Token URI | 
+
+
+
+
+
+
+
+made with <3 by harsh
